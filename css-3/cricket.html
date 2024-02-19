@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <link rel="shortcut icon" href="images/bat2.png" type="image/x-icon">
+    <style>
+       
+        .bat:hover{
+            transform: rotate(-10deg);
+            
+            transition: .2s;
+
+        }
+        .ImageResponsive{
+            height: 100%;
+            width: 100%;
+        }
+
+        .ball{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            left: 109px;
+        }
+
+      .field:hover .ball{
+            transform: translate(1000px);
+            transition: 2s;
+            transition-delay: .2s;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <div class="field">
+        <div class="bat">
+            <img src="images/bat3.jpg" alt="bat" >
+        </div>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

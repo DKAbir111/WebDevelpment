@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            animation: bounse 4s ease-in-out 1s infinite alternate;
+        }
+
+       
+        .field{
+            margin: 20px;
+            height: 200px;
+            width: 1050px;
+            background-color: cyan;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px grey;
+            border-left: 10px solid;
+            border-image: linear-gradient(180deg,blue,cyan);
+            border-image-slice: 1;
+            
+        }
+
+        @keyframes bounse{
+            0%{
+                left: 0;
+                top: 0;
+
+            }
+
+            50%{
+                left:500px ;
+                top: 150px;
+                background-color: blueviolet;
+            }
+
+            100%{
+                left: 1000px;
+                top: 0;
+                background-color: orange;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="ball">
+
+        </div>
+
+       
+       
+</body>
+</html>

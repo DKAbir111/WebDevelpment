@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-2</title>
+    <link rel="icon" href="../Basic_of_HTML/image/icon.png">
+    <style>
+        .wrapper {
+            background-color: aquamarine;
+            height: 1080px;
+        }
+
+        .border {
+            background-color: blueviolet;
+            border: 5px solid black;
+            border-radius: 30px;
+            margin-top: 20px;
+            padding: 40px;
+            width: 25%;
+            float: left;
+            margin-left: 5px;
+            text-align: justify;
+            height: 150px;
+
+        }
+
+        .border h2 {
+            text-align: center;
+        }
+
+        .border:hover {
+            background-color: red;
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: 2.5s;
+
+        }
+        .user form{
+            margin-top: 20px;
+        }
+        input:focus{
+            color: blue;
+            font-size: 20px;
+           
+        }
+
+       li:nth-child(2n+1){
+        background-color: indianred;
+       }
+       a:visited{
+        color: red;
+       }
+
+       p::before{
+        content: "❤️";
+       }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="border">
+            <h2>Heading</h2>
+            <p>
+                This is a paragraph.This is a paragraph.This is a paragraph.This is second paragraph.
+                This is a paragraph. This is third paragraph.This is a paragraph.This is a paragraph.
+            </p>
+        </div>
+
+        <div class="border">
+            <h2>Heading</h2>
+            <p>
+                This is a paragraph.
+            </p>
+            <p>
+                This is second paragraph.
+            </p>
+            <p>
+                This is third paragraph.
+            </p>
+        </div>
+        <div class="border">
+            <h2>Heading</h2>
+            <p>
+                This is a paragraph.
+            </p>
+            <p>
+                This is second paragraph.
+            </p>
+            <p>
+                This is third paragraph.
+            </p>
+        </div>
+
+        <div class="user">
+
+            <form>
+                Username:<input type="text"><br>
+                Password:<input type="text"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <ul>
+            <li>Abir</li>
+            <li>Nebir</li>
+            <li>Sabbir</li>
+            <li>Tania</li>
+            <li>Sonia</li>
+            <li>Tahsin</li>
+            <li>Sami</li>
+        </ul>
+
+    
+        <a href="google.com">Google</a><br>
+        <a href="https://mail.google.com/mail/u/0/#inbox">Facebook</a><br>
+<a href="mailto:someone@example.com">Send mail</a>
+    </div>
+</body>
+
+</html>

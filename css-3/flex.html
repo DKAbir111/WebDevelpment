@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="shortcut icon" href="../Basic_of_HTML/image/icon.png" type="image/x-icon">
+    <style>
+        .box {
+
+            height: 150px;
+            width: 150px;
+            border: 3px solid salmon;
+            border-radius: 5%;  
+        }
+
+        .container {
+            display: flex;
+           justify-content: flex-end
+           
+       
+         
+        }
+        .last{
+            margin-left: auto;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box last"></div>
+      
+    </div>
+
+</body>
+
+</html>

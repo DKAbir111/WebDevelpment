@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.wrapper{
+    height: 100px;
+    width: 500px;
+    background-color: aqua;
+    overflow: scroll;
+    text-align: justify;
+}
+@keyframes name{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+@keyframes abir {
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: green; left: 200px; top: 0px;}
+    50%{background-color: blue; left: 200px; top: 200px;}
+    75%{background-color: yellow; left: 0px; top: 200px;}
+    100%{background-color: red; left: 0px; top: 0px;}
+  
+    
+}
+.css{
+    background-color: black;
+    animation-name: abir;
+    position: relative;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    animation-name: name;
+    animation-duration: 8s;
+    background-color: aqua;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+            The overflow property has the following values:
+            
+            visible - Default. The overflow is not clipped. The content renders outside the element's box
+            hidden - The overflow is clipped, and the rest of the content will be invisible
+            scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+            auto - Similar to scroll, but it adds scrollbars only when necessary</p>
+    </div>
+
+<div></div>
+<div class="css"></div>
+</body>
+
+</html>

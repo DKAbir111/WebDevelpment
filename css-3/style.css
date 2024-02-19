@@ -1,0 +1,20 @@
+.box{
+    height: 150px;
+    width: 50%;
+    border: 5px solid blueviolet;
+    overflow: scroll;
+}
+
+.box2{
+    height: 150px;
+    margin-top: 10px;
+    width: 50%;
+    border: 5px solid peru;
+    overflow: scroll;
+}
+
+
+.gif:hover{
+    transform: scale(.75) rotate(45deg);
+    transition: 5s;
+}
